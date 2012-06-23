@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Y8Y2 - Instructions</title>
+<!-- Styling -->
+   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+   <link href='./common.css' rel='stylesheet' type='text/css'>
+<!-- src -->
+    <script src="./public/yabble.js"></script>
+    <script src="./public/gamejs.min.js"></script>
+    <script>
+        require.setModuleRoot('./javascript/');
+        require.run('main.startscreen')
+    </script>
+<!-- Html -->
+<body>
+   <h1>"Y8Y2" <br/>UNMED Infection Simulation</h1>
+
+<div class="boxcontainer">
+      <div class="infobox playlink" data-continent="unasur">
+         <h1>Play UNASUR</h1>
+         <img src="./images/unasur.png">
+      </div>
+      <div class="infobox playlink" data-continent="eu">
+         <h1>Play EU</h1>
+         <img src="./images/eu.png">
+      </div>
+      <div class="infobox playlink" data-continent="uae">
+         <h1>Play UAE</h1>
+         <img src="./images/uae.png">
+      </div>
+      <div class="infobox playlink" data-continent="asia">
+         <h1>Play UA</h1>
+         <img src="./images/asia.png">
+      </div>
+
+      <div class="clear"></div>
+      <h1> Instructional Information </h1>
+
+       <div class="infobox">
+         <h1>Transport</h1>
+         <img src ="./images/newspaper/plane.png">
+         <p>
+            Drag troops from one city to another to issue a movement command.
+         </p>
+         <video class="instructionvideo" autoplay muted loop>
+         <source src='./images/newspaper/move.ogv' type='video/ogg; codecs="theora, vorbis"'/>
+         </video>
+       </div>
+       <div class="infobox">
+          <h1> Outbreaks </h1>
+          <img src ="./images/newspaper/virus.png">
+          <p>
+            Especially beware of outbreaks from nondomestic strains.
+          </p>
+         <video class="instructionvideo" autoplay muted loop>
+         <source src='./images/newspaper/increaseinfection.ogv' type='video/ogg; codecs="theora, vorbis"'/>
+         </video>
+
+       </div>
+       <div class="infobox">
+         <h1>Treatment</h1>
+          <img src ="./images/newspaper/treat.png">
+         <p>
+         Click on a city to start treatment. Your troops must be present.
+         </p>
+         <video class="instructionvideo" autoplay muted loop>
+         <source src='./images/newspaper/treat.ogv' type='video/ogg; codecs="theora, vorbis"'/>
+         </video>
+       </div>
+
+      <div class="clear"></div>
+
+       <div class="infobox triviabox">
+       <h2> Release Statement by the Managment</h2>
+   <p>The Y8Y2 gobal infection simulation is, like all great games of strategy, primarely about positioning your units in way favorable to fulfilling your current and future objectives. The strategic part lies in being prepared for what comes. Executing orders is the easy part.</p>
+
+<p>A global infection, like all cooperative strategies in the sense of 'game theory', must be dealt with by having all participating parties obey the primary objective of minimizing global suffering.</p>
+
+<p>Don't hesitate to send help. Once an infection has taken hold, it will quickly spread.</p>
+
+       </div>
+       <div class="infobox triviabox">
+<p>But remember: You control only one party involved. The participation of all is required to combat a spreading infection. Anticipate what the AI will do - your computer partners are sadly sometimes egoistic in a stupid way. They might even change a cooperative plan if their own interests are in danger.</p>
+
+<p> Try to prevent them from being harmful to their own interests. </p>
+
+<pre>
+   Known bugs
+   
+     * Colors in graph on statistic screen in wrong order
+         compared to text list
+     * text rendering buggy on linux (and probably macos)
+     * too CPU heavy
+</pre>
+
+      </div>
+</div>
+
+<script>
+   var links = Array.prototype.slice.apply(document.getElementsByClassName('playlink'), [0]);
+   links.forEach(function(elem) {
+      elem.addEventListener('click', function() {
+         document.location.href = './game.html#' + elem.dataset.continent
+      });
+   });
+   var videos = Array.prototype.slice.apply(document.getElementsByClassName('instructionvideo'), [0]);
+   videos.forEach(function(video) {
+      if (typeof video.loop == 'boolean') { // loop supported
+        video.loop = true;
+      } else { // loop property not supported
+        video.addEventListener('ended', function () {
+          this.currentTime = 0;
+          this.play();
+        }, false);
+      }
+   });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+   eu: ['london', 'madrid', 'essen', 'paris', 'milan', 'stpetersburg', 'istanbul', 'cairo', 'algiers', 'lagos', 'khartoum', 'kinshasa', 'johannesburg'],
+   uae: ['moscow', 'tehran', 'karachi','baghdad', 'riyadh', 'cairo', 'mumbai', 'delhi','chennai'],
+   unasur: ['sanfrancisco', 'chicago', 'toronto', 'newyork', 'washington', 'miami', 'bogota', 'saopaulo', 'buenosaires', 'santiago', 'lima', 'mexicocity', 'losangeles', 'atlanta'],
+   asia: ['beijing', 'shanghai', 'hongkong', 'hochiminhcity', 'manila', 'taipei', 'osaka', 'tokio', 'seoul', 'beijing', 'jakarta', 'sydney', 'kolkata', 'bangkok']
+}

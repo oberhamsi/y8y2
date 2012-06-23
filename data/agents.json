@@ -1,0 +1,53 @@
+{
+   engineer: {
+      city: 'paris',
+      continent: 'eu',
+   },
+   scientiest: {
+      city: 'paris',
+      continent: 'eu',
+   },
+   medic: {
+      city: 'paris',
+      continent: 'eu',
+   },
+   traveler:  {
+      city: 'paris',
+      continent: 'eu',
+   },
+
+   engineer2:  {
+      city: 'atlanta',
+      continent: 'unasur',
+   },
+   medic2:  {
+      city: 'atlanta',
+      continent: 'unasur',
+   },
+   scientiest2:  {
+      city: 'atlanta',
+      continent: 'unasur',
+   },
+
+   engineer3:  {
+      city: 'hongkong',
+      continent: 'asia',
+   },
+   medic3:  {
+      city: 'hongkong',
+      continent: 'asia',
+   },
+   scientiest3:  {
+      city: 'hongkong',
+      continent: 'asia',
+   },
+
+   engineer4:  {
+      city: 'karachi',
+      continent: 'uae',
+   },
+   medic4:  {
+      city: 'karachi',
+      continent: 'uae',
+   }
+}

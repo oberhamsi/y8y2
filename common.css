@@ -1,0 +1,76 @@
+/** GAME **/
+body{
+  background:black;
+  margin:0px;
+  margin-top: 10px;
+  padding:0;
+  font-family: 'Ubuntu Mono', cursive;
+  color: #eeeeee;
+  text-align:center;
+  background: url('./images/infection.png') repeat;
+}
+.bottom a{
+color:white;
+}
+/** INDEX **/
+h1, h2 {
+   text-decoration:underline;
+}
+.infobox {
+float:left;
+width: 280px;
+padding: 0.5em;
+margin: 1em;
+border: 2px solid #fff711;
+}
+.infobox img{
+height: 130px;
+}
+.infobox video {
+margin: 0.5em;
+width: 220px;
+}
+.infobox {
+height: 450px;
+}
+.playlink {
+ height: auto;
+ width: 225px;
+}
+.playlink a {
+text-decoration:none;
+}
+.playlink:hover {
+color: black;
+background-color: white;
+cursor: pointer;
+}
+.triviabox {
+   width: 35%;
+   height: 330px;
+   text-align:left;
+}
+.clear {
+   clear:both;
+}
+
+/** STATS **/
+table.stats {
+   font-size:large;
+   margin: 2em;
+   float: left;
+   width: 20em;
+}
+th {
+   font-weight: bold;
+   font-size: x-large;
+}
+table tr td {
+   text-align:left;
+}
+table tr td.numberdata {
+   text-align:right;
+}
+img.stats {
+   float:left;
+}

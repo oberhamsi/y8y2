@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Y8Y2</title>
+<!-- Styling -->
+   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+   <link href='./common.css' rel='stylesheet' type='text/css'>
+<!-- Start javascript/main.js -->
+    <script src="./public/yabble.js"></script>
+    <script src="./public/gamejs-wrapped.js"></script>
+    <script>
+        require.setModuleRoot('./javascript/');
+        require.run('main.stats')
+    </script>
+</head>
+<!-- Html -->
+<body>
+    <div>
+      <h1> Simulation Result 1911 - 2011 </h1>
+
+         <table class="stats">
+         <tr>
+            <th colspan=2>
+               Remaining population per country
+            </th>
+         <tr>
+            <td>EU</td>
+            <td id="remaining-eu" class="numberdata">112</td>
+         </tr>
+         <tr>
+            <td>ASIA</td>
+            <td id="remaining-asia" class="numberdata">12</td>
+         </tr>
+         <tr>
+            <td>UAE</td>
+            <td id="remaining-uae" class="numberdata">12</td>
+         </tr>
+         <tr>
+            <td>UNASUR</td>
+            <td id="remaining-unasur" class="numberdata">12</td>
+         </tr>
+         <tr>
+            <td colspan=2>
+               <h3> Overall Assessment</h3>
+               <p class="assessment">
+               You should increase your efforts in helping other nations. Don't focus
+               too much on curing foreign infections since that takes a lot of time, which is
+               better spent helping the burdened.
+               </p>
+               (this text is currently static but will be modified to the player's activites)
+            
+            </td>
+         </tr>
+      </table>
+      
+      
+      <img id="stat-graph" class="stats">
+      
+            <div class="clear"></div>
+      
+      <h2> Additional statistics for EU </h2>
+      
+      <table class="stats">
+         <tr>
+            <th colspan=2>
+               Location of treatments
+            </th>
+         <tr>
+            <td>Local</td>
+            <td id="infections-local" class="numberdata">112</td>
+         </tr>
+         <tr>
+            <td>Foreign</td>
+            <td id="infections-foreign" class="numberdata">12</td>
+         </tr>
+      </table>
+
+      <table class="stats">
+         <tr>
+            <th colspan=2>
+               Type of strains cured
+            </th>
+         <tr>
+            <td>Domestic</td>
+            <td id="infections-domestic" class="numberdata">112</td>
+         </tr>
+         <tr>
+            <td>Nondomestic</td>
+            <td id="infections-nondomestic" class="numberdata">12</td>
+         </tr>
+      </table>
+      <div class="clear"></div>
+
+        <p class="bottom">
+         <a href="./index.html">Start new game</a>
+        </p>
+    </div>
+</body>
+</html>

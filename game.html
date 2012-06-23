@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Y8Y2</title>
+<!-- Styling -->
+   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+   <link href='./common.css' rel='stylesheet' type='text/css'>
+<!-- Start javascript/main.js -->
+    <script src="./public/yabble.js"></script>
+    <script src="./public/gamejs.min.js"></script>
+    <script>
+        require.setModuleRoot('./javascript/');
+        require.run('main')
+    </script>
+</head>
+<!-- Html -->
+<body>
+    <div>
+        <div id="gjs-loader">
+         <h1>Loading...</h1>
+        </div>
+        <canvas id="gjs-canvas"></canvas>
+        <p class="bottom">
+         <a href="./index.html">Start new game</a>
+        </p>
+    </div>
+</body>
+</html>
